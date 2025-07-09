@@ -10,7 +10,7 @@ class DiscountCalculator{
         }
 
         // Instância: é uma ocorrência específica dentro de uma classe.
-        // Nesse caso estamos pegando op valor mínimo, verificando se ele é maior, se sim aplicar desconto.
+        // Nesse caso estamos pegando o valor mínimo, verificando se ele é maior, se sim aplicar desconto.
 
         return $value;
     }
