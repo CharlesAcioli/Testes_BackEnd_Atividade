@@ -73,6 +73,11 @@ class CreditCardExpirationValidatorTest extends TestCase{
 
     public function testCardExpirationWithSpaces() {
         $dateWithSpaces = ' 12/2025 '; //A data precisa ser futura também.
+
+        // $futureDate = (new DateTime('+1 month'))->format('m/Y');
+        // $dateWithSpaces = ' ' . $futureDate . ' ';
+        // Esse método também pode ser usado. É considerado um teste dinâmico.
+
         $this->assertFalse($this->isCardExpired($dateWithSpaces), "Cartão com espaços em branco ao redor da data não deve ser expirado!");
     }
 
